@@ -1,0 +1,37 @@
+header.header--default.fixed-top.bg-light
+    .container-fluid.px-0
+        .row.mx-auto.align-items-center.bg-dark
+            .col-4.col-sm-4.col-lg-2.col-xl-1.program__logo
+                img.img-fluid.program__logo.p-2(src='http://acmelogos.com/images/logo-2.svg')
+            
+
+            .col-6.mx-auto
+                include ../header/shopping-search/shopping-search-form.pug
+            
+            .col-2.col-sm-2.col-lg-1.col-xl-4.pl-lg-0.text-right.d-xl-none.ml-auto
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.fas.fa-bars
+                    
+        .row.mx-auto            
+            .col-12.bg-light.px-0
+                nav.navbar.navbar-expand-xl.navbar-light.d-block.py-0
+                    #navbarSupportedContent.collapse.navbar-collapse.pt-2
+                        ul.navbar-nav.mx-auto
+                            li.nav-item.dropdown
+                                a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | All Departments
+                                .dropdown-menu(style="width: 50vw; height: 50vh;" aria-labelledby='navbarDropdown')
+                                    .container-fluid
+                                        .row.w-100.mx-auto
+                                            .col-3
+                                                ul.list-group.list-group-flush.border-0
+                                                    li.list-group-item.p-0
+                                                        a.dropdown-item(href='/distr/events-landing.html') Events
+                                                    li.list-group-item.p-0
+                                                        a.dropdown-item(href='#') Travel
+                                                   
+                                                    li.list-group-item.p-0
+                                                        a.dropdown-item(href='#') Apple
+                                            .col-9.bg-warning.py-5
+                                  
+                            

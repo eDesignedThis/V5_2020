@@ -1,0 +1,20 @@
+#delivery-options.mb-4
+    ul.list-group.list-group-flush.delivery-options
+        li.list-group-item.d-flex.justify-content-between.align-items-center.px-0.py-2.border-0
+            .form-check
+                input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')
+                label.form-check-label(for='exampleRadios1')
+                    | In Store Pick up
+            span.badge.badge-primary.badge-pill [count]
+        li.list-group-item.d-flex.justify-content-between.align-items-center.px-0.py-2.border-0
+            .form-check
+                input#exampleRadios2.form-check-input(type='radio' name='exampleRadios' value='option2')
+                label.form-check-label(for='exampleRadios2')
+                    | Ship to Home
+            span.badge.badge-primary.badge-pill [count]
+        li.list-group-item.d-flex.justify-content-between.align-items-center.px-0.py-2.border-0
+            .form-check
+                input#exampleRadios3.form-check-input(type='radio' name='exampleRadios' value='option3')
+                label.form-check-label(for='exampleRadios3')
+                    | Both
+            span.badge.badge-primary.badge-pill [count]

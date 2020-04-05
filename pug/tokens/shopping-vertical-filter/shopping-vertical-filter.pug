@@ -1,0 +1,45 @@
+.vertical-filter--desktop.d-none.d-xl-block
+    h4.vertical-filter__section__title.border-bottom.pb-2.mb-2 Delivery Options
+    include ../shopping-vertical-filter/filters/delivery-options.pug
+    h4.vertical-filter__section__title.border-bottom.pb-2.mb-2 Top Filters
+    include ../shopping-vertical-filter/filters/departments-filter.pug
+    include ../shopping-vertical-filter/filters/point-filter.pug
+    include ../shopping-vertical-filter/filters/brand-filter.pug
+
+#accordionExample.accordion.d-block.d-xl-none
+    .card
+        #headingOne.card-header
+            h2.mb-0
+                button.btn.btn-link.btn-block.p-0(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    .row
+                        .col-6.px-0.text-left
+                            | Departments
+                        .col-6.text-right.px-0
+                            span.fas.fa-minus
+        #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+            .card-body
+                include ../shopping-vertical-filter/filters/departments-filter.pug
+    .card
+        #headingTwo.card-header
+            h2.mb-0
+                button.btn.btn-link.collapsed.btn-block.p-0(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    .row
+                        .col-6.px-0.text-left
+                            | Points
+                        .col-6.px-0.text-right.px-0
+                            span.fas.fa-plus
+        #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+            .card-body
+                    include ../shopping-vertical-filter/filters/point-filter.pug
+    .card
+        #headingThree.card-header
+            h2.mb-0
+                button.btn.btn-link.collapsed.btn-block.p-0(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                    .row
+                        .col-6.px-0.text-left
+                            | Brands
+                        .col-6.px-0.text-right.px-0
+                            span.fas.fa-plus
+        #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+            .card-body
+                include ../shopping-vertical-filter/filters/brand-filter.pug

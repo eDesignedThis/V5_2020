@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5f21471d45.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/app.css">
+  <title></title>
+</head>
+<body class="d-flex flex-column">
+  <header class="header--default fixed-top bg-light">
+    <div class="container-fluid px-0">
+      <div class="row mx-auto align-items-center bg-dark">
+        <div class="col-4 col-sm-4 col-lg-2 col-xl-1 program__logo"><img class="img-fluid program__logo p-2" src="http://acmelogos.com/images/logo-2.svg"></div>
+        <div class="col-6 mx-auto">
+          <form class="form-inline shopping-search d-block">
+            <div class="input-group border">
+              <div class="input-group-prepend d-none d-md-block">
+                <select class="custom-select border-0">
+                  <option value="All Products">All Products</option>
+                  <option value="Apple">Apple</option>
+                </select>
+              </div>
+              <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn bg-white" type="submit"><span class="fas fa-search"></span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-2 col-sm-2 col-lg-1 col-xl-4 pl-lg-0 text-right d-xl-none ml-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fas fa-bars"></span></button>
+        </div>
+      </div>
+      <div class="row mx-auto">           
+        <div class="col-12 bg-light px-0">
+          <nav class="navbar navbar-expand-xl navbar-light d-block py-0">
+            <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Departments</a>
+                  <div class="dropdown-menu" style="width: 50vw; height: 50vh;" aria-labelledby="navbarDropdown">
+                    <div class="container-fluid">
+                      <div class="row w-100 mx-auto">
+                        <div class="col-3">
+                          <ul class="list-group list-group-flush border-0">
+                            <li class="list-group-item p-0"><a class="dropdown-item" href="/distr/events-landing.html">Events</a></li>
+                            <li class="list-group-item p-0"><a class="dropdown-item" href="#">Travel</a></li>
+                            <li class="list-group-item p-0"><a class="dropdown-item" href="#">Apple</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-9 bg-warning py-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main--default flex-grow-1">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1 class="mb-0 screen-title font-weight-light"></h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-8 mx-auto shopping">
+          <div class="row breadcrumb--default" id="breadcrumb">
+            <div class="col-12"> 
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-12 col-lg-2"> 
+              <div class="vertical-filter--desktop d-none d-xl-block">
+                <h4 class="vertical-filter__section__title border-bottom pb-2 mb-2">Delivery Options</h4>
+                <div class="mb-4" id="delivery-options">
+                  <ul class="list-group list-group-flush delivery-options">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0">
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked="">
+                        <label class="form-check-label" for="exampleRadios1">In Store Pick up</label>
+                      </div><span class="badge badge-primary badge-pill">[count]</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0">
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">Ship to Home</label>
+                      </div><span class="badge badge-primary badge-pill">[count]</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0">
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleRadios3" type="radio" name="exampleRadios" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">Both</label>
+                      </div><span class="badge badge-primary badge-pill">[count]</span>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="vertical-filter__section__title border-bottom pb-2 mb-2">Top Filters</h4>
+                <h6 class="font-weight-bold">Departments</h6>
+                <ul class="list-group list-group-flush delivery-options mb-4">
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0"><a href="#">[Department Name One Here]</a><span class="badge badge-primary badge-pill">[count]</span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0"><a href="#">[Department Name One Here]</a><span class="badge badge-primary badge-pill">[count]</span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0"><a href="#">[Department Name One Here]</a><span class="badge badge-primary badge-pill">[count]</span></li>
+                </ul>
+                <h6 class="font-weight-bold">Points</h6>
+                <div class="point-filter mb-4">
+                  <input class="form-control" id="inlineFormInputName2" type="text" placeholder="Min"><span class="d-block">- to - </span>
+                  <input class="form-control mb-2" id="inlineFormInputGroupUsername2" type="text" placeholder="Max">
+                  <button class="btn btn-outline-secondary btn-block" type="submit"><span class="text-left">Search </span><span class="fas fa-search text-right"></span></button>
+                  <div class="mt-3 mb-2 border-bottom"></div>
+                  <ul class="list-group list-group-flush point-ranges">
+                    <li class="list-group-item px-0 py-2 border-0">
+                      <div class="form-check d-flex justify-content-between align-items-center">
+                        <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">750 - 3750</label>
+                        <div class="badge badge-primary badge-pill">[count]</div>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0 py-2 border-0">
+                      <div class="form-check d-flex justify-content-between align-items-center">
+                        <input class="form-check-input" id="defaultCheck2" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">3750 - 7500</label>
+                        <div class="badge badge-primary badge-pill">[count]</div>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0 py-2 border-0">
+                      <div class="form-check d-flex justify-content-between align-items-center">
+                        <input class="form-check-input" id="defaultCheck3" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck3">7500 - 10,000</label>
+                        <div class="badge badge-primary badge-pill">[count]</div>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0 py-2 border-0"><a href="#"><span class="fas fa-plus mr-1"></span><span>See All</span></a></li>
+                  </ul>
+                </div>
+                <h6 class="font-weight-bold">Brands</h6>
+                <div class="input-group mb-3">
+                  <input class="form-control" type="text" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append"><span class="input-group-text bg-white"> <span class="fas fa-search"></span></span></div>
+                </div>
+                <ul class="list-group list-group-flush point-ranges">
+                  <li class="list-group-item px-0 py-2 border-0">
+                    <div class="form-check d-flex justify-content-between align-items-center">
+                      <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+                      <label class="form-check-label" for="defaultCheck1">Brand One</label>
+                      <div class="badge badge-primary badge-pill">[count]</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 py-2 border-0">
+                    <div class="form-check d-flex justify-content-between align-items-center">
+                      <input class="form-check-input" id="defaultCheck2" type="checkbox" value="">
+                      <label class="form-check-label" for="defaultCheck2">Brand Two</label>
+                      <div class="badge badge-primary badge-pill">[count]</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 py-2 border-0">
+                    <div class="form-check d-flex justify-content-between align-items-center">
+                      <input class="form-check-input" id="defaultCheck3" type="checkbox" value="">
+                      <label class="form-check-label" for="defaultCheck3">Brand Three</label>
+                      <div class="badge badge-primary badge-pill">[count]</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 py-2 border-0"><a href="#"><span class="fas fa-plus mr-1"></span><span>See All</span></a></li>
+                </ul>
+              </div>
+              <div class="accordion d-block d-xl-none" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="row">
+                          <div class="col-6 px-0 text-left">Departments</div>
+                          <div class="col-6 text-right px-0"><span class="fas fa-minus"></span></div>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h6 class="font-weight-bold">Departments</h6>
+                      <ul class="list-group list-group-flush delivery-options mb-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0"><a href="#">[Department Name One Here]</a><span class="badge badge-primary badge-pill">[count]</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0"><a href="#">[Department Name One Here]</a><span class="badge badge-primary badge-pill">[count]</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-0"><a href="#">[Department Name One Here]</a><span class="badge badge-primary badge-pill">[count]</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed btn-block p-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="row">
+                          <div class="col-6 px-0 text-left">Points</div>
+                          <div class="col-6 px-0 text-right px-0"><span class="fas fa-plus"></span></div>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h6 class="font-weight-bold">Points</h6>
+                      <div class="point-filter mb-4">
+                        <input class="form-control" id="inlineFormInputName2" type="text" placeholder="Min"><span class="d-block">- to - </span>
+                        <input class="form-control mb-2" id="inlineFormInputGroupUsername2" type="text" placeholder="Max">
+                        <button class="btn btn-outline-secondary btn-block" type="submit"><span class="text-left">Search </span><span class="fas fa-search text-right"></span></button>
+                        <div class="mt-3 mb-2 border-bottom"></div>
+                        <ul class="list-group list-group-flush point-ranges">
+                          <li class="list-group-item px-0 py-2 border-0">
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                              <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+                              <label class="form-check-label" for="defaultCheck1">750 - 3750</label>
+                              <div class="badge badge-primary badge-pill">[count]</div>
+                            </div>
+                          </li>
+                          <li class="list-group-item px-0 py-2 border-0">
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                              <input class="form-check-input" id="defaultCheck2" type="checkbox" value="">
+                              <label class="form-check-label" for="defaultCheck2">3750 - 7500</label>
+                              <div class="badge badge-primary badge-pill">[count]</div>
+                            </div>
+                          </li>
+                          <li class="list-group-item px-0 py-2 border-0">
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                              <input class="form-check-input" id="defaultCheck3" type="checkbox" value="">
+                              <label class="form-check-label" for="defaultCheck3">7500 - 10,000</label>
+                              <div class="badge badge-primary badge-pill">[count]</div>
+                            </div>
+                          </li>
+                          <li class="list-group-item px-0 py-2 border-0"><a href="#"><span class="fas fa-plus mr-1"></span><span>See All</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed btn-block p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="row">
+                          <div class="col-6 px-0 text-left">Brands</div>
+                          <div class="col-6 px-0 text-right px-0"><span class="fas fa-plus"></span></div>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h6 class="font-weight-bold">Brands</h6>
+                      <div class="input-group mb-3">
+                        <input class="form-control" type="text" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append"><span class="input-group-text bg-white"> <span class="fas fa-search"></span></span></div>
+                      </div>
+                      <ul class="list-group list-group-flush point-ranges">
+                        <li class="list-group-item px-0 py-2 border-0">
+                          <div class="form-check d-flex justify-content-between align-items-center">
+                            <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+                            <label class="form-check-label" for="defaultCheck1">Brand One</label>
+                            <div class="badge badge-primary badge-pill">[count]</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0 py-2 border-0">
+                          <div class="form-check d-flex justify-content-between align-items-center">
+                            <input class="form-check-input" id="defaultCheck2" type="checkbox" value="">
+                            <label class="form-check-label" for="defaultCheck2">Brand Two</label>
+                            <div class="badge badge-primary badge-pill">[count]</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0 py-2 border-0">
+                          <div class="form-check d-flex justify-content-between align-items-center">
+                            <input class="form-check-input" id="defaultCheck3" type="checkbox" value="">
+                            <label class="form-check-label" for="defaultCheck3">Brand Three</label>
+                            <div class="badge badge-primary badge-pill">[count]</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0 py-2 border-0"><a href="#"><span class="fas fa-plus mr-1"></span><span>See All</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-10"> 
+              <div class="row align-items-end mb-4 mx-auto" id="shopping-search-meta-top">
+                <div class="col-6">
+                  <h1 class="h5 item-title mb-0">Shop [item-count] results for "[search-term]" </h1>
+                </div>
+                <div class="col-6">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination shopping-pagination--top mb-0 justify-content-end">
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="row search-results-container mx-auto">
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-4">
+                                  <div class="card shopping-card border">
+                                    <div class="card-body p-3">
+                                      <div class="row justify-content-between mx-auto">
+                                        <div class="col-6 text-left pl-0">
+                                          <div class="badge badge-success">On Sale Now!</div>
+                                        </div>
+                                        <div class="col-6 text-right pr-0"><span class="far fa-heart"></span></div>
+                                      </div>
+                                      <div class="row justify-content-center mx-auto"> 
+                                        <div class="col-12 col-xl-8 text-center py-4"><a href="#">
+                                            <div class="itemWrapper mx-auto"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg"></div></a></div>
+                                      </div><a class="item__title mt-2 text-center d-block mb-0" href="#">[Item Title Goes Here]</a><small class="text-center">
+                                        <div class="d-block">[Category]</div>
+                                        <div class="text-center d-block mb-2"><span class="fas fa-running"> </span><span> In store Pickup Available</span></div></small>
+                                      <div class="row mx-auto"> 
+                                        <div class="col-12 mx-auto"> 
+                                          <button class="btn btn-outline-primary btn-block" href="#"> <small>ADD TO CART</small></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+              </div>
+              <div class="d-none">
+                <h1 class="h2">No results to display.</h1>
+                <p>show related items suggestions</p>
+              </div>
+              <div class="row justify-content-center mb-4 mx-auto" id="shopping-search-meta-bottom">       
+                <div class="col-xl-6 mx-auto">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination mb-0 justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="row mx-auto my-2 text-muted" id="disclaimer"><small class="text-center mx-auto text-muted">Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer--default">
+    <div class="row justify-content-center bg-light mx-auto">
+      <div class="col-xl-6">
+        <nav>
+          <ul class="nav justify-content-center bg-info">
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row copyright py-4 text-light text-center bg-dark mx-auto">
+      <div class="col-12"><small class="text-center">Copyright &copy; 2020. Rewardtrax.com</small></div>
+    </div>
+  </footer>
+</body>
+<!-- Optional JavaScript-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/distr/js/app.js"></script>

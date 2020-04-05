@@ -1,0 +1,20 @@
+extends index.pug
+
+block title
+    title
+
+block content
+    .col-xl-8.mx-auto.shopping
+        include ../pug/tokens/shopping-breadcrumb/shopping-breadcrumb.pug
+        .row.py-4
+            .col-12.col-lg-2 
+                include ../pug/tokens/shopping-vertical-filter/shopping-vertical-filter.pug
+            .col-12.col-lg-10 
+                include ../pug/tokens/shopping-search-meta/shopping-search-meta-top.pug
+                include ../pug/tokens/shopping-search-results/shopping-search-results.pug
+                //- If no results to display show below.
+                .d-none
+                    h1.h2 No results to display.
+                    p show related items suggestions
+                include ../pug/tokens/shopping-search-meta/shopping-search-meta-bottom.pug
+                include ../pug/tokens/shopping-disclaimer/shopping-disclaimer.pug

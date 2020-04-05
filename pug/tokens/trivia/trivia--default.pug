@@ -1,0 +1,66 @@
+#divTrivia__ctl3.d-block
+    input#_ctl3_txtQuestionId(name='_ctl3:txtQuestionId' type='hidden')
+    input#_ctl3_txtQuestionType(name='_ctl3:txtQuestionType' type='hidden')
+    input#_ctl3_txtPageIndex(name='_ctl3:txtPageIndex' type='hidden')
+    .trivia_container
+        .row.trivia_header.align-items-center.justify-content-between
+            .col-12.p-2.bg-primary
+                span#lblQuestionHeader
+            .col-6
+                .trivia_title
+                    span#lblSurveyTitle RT Trivia
+            .col-6.text-right
+                .trivia_question_number.d-block.my-2
+                    span#lblSurveyNumber Trivia Question #1
+        
+        
+        
+        .trivia_question.d-block.my-2
+        span#lblSurveyQuestion Who&apos;s the best team in college football?
+        div
+        span#lblError.error.my-2 You have reached the last question.
+        .trivia_answer_container
+        #lblSurveyAnswers.my-2
+            .row
+                .col-md-6.mb-2.mb-md-0
+                    .trivia_answer
+                        label
+                        input.trivia_answer_radio_button(type='radio' data-psg-required='1' data-psg-label='An answer to Question 1' name='q65012394' value='65083239')
+                        span.trivia_answer_text University of Georgia
+                .col-md-6.mb-2.mb-md-0
+                    .trivia_answer
+                        label
+                        input.trivia_answer_radio_button(type='radio' name='q65012394' value='65083240')
+                        span.trivia_answer_text University of Alabama
+                .col-md-6.mb-2.mb-md-0
+                    .trivia_answer
+                        label
+                        input.trivia_answer_radio_button(type='radio' name='q65012394' value='65083241')
+                        span.trivia_answer_text University of Tennessee
+                .col-md-6
+                    .trivia_answer
+                        label
+                        input.trivia_answer_radio_button(type='radio' name='q65012394' value='65083242')
+                        span.trivia_answer_text University of South Carolina
+        .trivia_button_container
+        .row
+            .col-12
+                button#cmdSubmit.trivia_submit_button.btn.btn-primary(type='submit' style='') Submit
+           
+        .row
+            .col-12
+                span#lblCorrect.trivia_correct_text(style='display: none;')
+            
+                
+        .row 
+            .col-12
+                span#lblWrong.trivia_wrong_text(style='display: none;')
+    #pnlPager(style='display: none;')
+        .trivia_pager_container
+            .row 
+                .col-6
+     
+                    a#cmdPrevious.trivia_pager_page_link.trivia_pager_previous_page_link(href='#' style='display: none;') &lt; Prev
+
+                .col-6.text-right
+                    a#cmdNext.trivia_pager_page_link.trivia_pager_next_page_link(href='#' style='display: none;') Next &gt;

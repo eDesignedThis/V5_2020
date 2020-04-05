@@ -1,0 +1,45 @@
+extends index.pug
+
+block title
+    title
+
+block content
+    .col-xl-8.mx-auto.shopping
+        include ../pug/tokens/jumbotron/shopping-jumbotron.pug
+
+        include ../pug/tokens/section-title/section-title--default.pug
+
+        .row.mx-auto
+            mixin category-cards
+                .col-12.col-sm-4.mb-4
+                    a(href="#")
+                        .card.shopping-card
+                            .card-body.py-5
+                                .row.justify-content-center 
+                                    .col-12.col-xl-8.text-center
+                                        .itemWrapper.mx-auto
+                                            img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg')
+                        span.d-block.category__title.text-center.mt-2 [Category Title] 
+            -for (var i=0; i<3; i++)
+                +category-cards
+
+
+        include ../pug/tokens/section-title/section-title--default.pug
+
+        .row.mx-auto
+            mixin category-cards
+                .col-12.col-sm-4.mb-4
+                    a(href="#")
+                        .card.shopping-card
+                            .card-body.py-5
+                                .row.justify-content-center 
+                                    .col-12.col-xl-8.text-center
+                                        .itemWrapper.mx-auto
+                                            img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922_rd.jpg')
+                        span.d-block.category__title.text-center.mt-2 [Category Title] 
+            -for (var i=0; i<9; i++)
+                +category-cards
+
+    
+
+

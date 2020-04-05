@@ -1,0 +1,19 @@
+.item-detail__delivery-options.d-block.my-3
+    p.h6.delivery-block-option Delivery Options
+    .d-flex.justify-content-between 
+        .form-check.border.border-primary.w-100.text-center.p-4
+            input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')
+            label.form-check-label(for='exampleRadios1')
+                span.fas.fa-running.d-block 
+                small  In store Pickup
+                small.d-block.font-weight-bold [TODAY]
+                    span.font-weight-light  at [Location]
+                small
+                    a(href="#") Change Store
+        .form-check.border.w-100.text-center.p-4
+            input#exampleRadios2.form-check-input(type='radio' name='exampleRadios' value='option2')
+            label.form-check-label(for='exampleRadios2')
+                span.fas.fa-shipping-fast.d-block 
+                small  Ship to Address
+                small.d-block.font-weight-bold [TODAY]
+                    span.font-weight-light  at [Location]

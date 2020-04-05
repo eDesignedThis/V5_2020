@@ -1,0 +1,57 @@
+extends index.pug
+
+block title
+    title
+
+block content
+    .col-xl-8.mx-auto.shopping
+        .row 
+            .col-12.col-lg-8
+                .row.mb-4 
+                    .col-12
+                        include ../pug/tokens/shopping-breadcrumb/shopping-breadcrumb.pug
+                        small#itemdetail_lblModelNumber.text-muted Model Number: [model-number]
+                .row 
+                    .col-12.col-md-3.order-2.order-md-1.extra-images
+                        .row.my-3.flex-md-column 
+                            .col-4.col-md-12.mb-4
+                                .card.item-detail
+                                    .card-body
+                                        img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg')
+                            .col-4.col-md-12.mb-4
+                                .card.item-detail
+                                    .card-body
+                                        img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg')
+                            .col-4.col-md-12
+                                .card.item-detail
+                                    .card-body
+                                        img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg')
+                        
+
+
+                    .col-12.col-md-9.order-1.order-md-2
+                        .card.item-detail-image
+                            .card-body
+                                img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg')
+                                
+                        .row
+                            .col-12
+                                include ../pug/tokens/item-detail/item-detail__quantity-message.pug
+                                
+                                    
+                
+            .col-12.col-lg-4 
+                include ../pug/tokens/item-detail/item-detail__sidebar.pug
+
+                .row.my-4 
+                    .col-12 
+                        p.h6.delivery-block-option Quantity
+                    .col-5
+                        include ../pug/tokens/item-detail/item-detail__quantity-selector.pug
+                    .col-7
+                        a.btn.btn-block.btn-primary(href="#") Add to Cart
+
+
+                include ../pug/tokens/item-detail/item-detail__full-description.pug
+
+        include ../pug/tokens/shopping-disclaimer/shopping-disclaimer.pug

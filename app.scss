@@ -1,0 +1,39 @@
+@import "scss/_variables.scss";
+@import "scss/_avatar.scss";
+@import "scss/_pax-setup.scss";
+
+@import "pug/tokens/header/_header.scss";
+@import "pug/tokens/item-detail/_item-detail.scss";
+@import "scss/_shopping__landing.scss";
+@import "pug/tokens/trivia/_trivia.scss";
+
+body,
+html {
+  height: 100%;
+  position: relative;
+  font: {
+    family: $base-font-family;
+    line-height: $base-line-height;
+    weight: $base-font-weight;
+  }
+}
+
+.main--default {
+  margin-top: 5em;
+}
+
+@media (min-width: 576px) {
+  .main--default {
+    margin-top: 6em;
+  }
+}
+@media (min-width: 1280px) {
+  .main--default {
+    margin-top: 7em;
+  }
+}
+@media (min-width: 1400px) {
+  .main--default {
+    margin-top: 8em;
+  }
+}

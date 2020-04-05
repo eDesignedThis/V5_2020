@@ -1,0 +1,68 @@
+
+<div class="d-block" id="divTrivia__ctl3">
+  <input id="_ctl3_txtQuestionId" name="_ctl3:txtQuestionId" type="hidden"/>
+  <input id="_ctl3_txtQuestionType" name="_ctl3:txtQuestionType" type="hidden"/>
+  <input id="_ctl3_txtPageIndex" name="_ctl3:txtPageIndex" type="hidden"/>
+  <div class="trivia_container">
+    <div class="row trivia_header align-items-center justify-content-between">
+      <div class="col-12 p-2 bg-primary"><span id="lblQuestionHeader"></span></div>
+      <div class="col-6">
+        <div class="trivia_title"><span id="lblSurveyTitle">RT Trivia</span></div>
+      </div>
+      <div class="col-6 text-right">
+        <div class="trivia_question_number d-block my-2"><span id="lblSurveyNumber">Trivia Question #1</span></div>
+      </div>
+    </div>
+    <div class="trivia_question d-block my-2"></div><span id="lblSurveyQuestion">Who&apos;s the best team in college football?</span>
+    <div></div><span class="error my-2" id="lblError">You have reached the last question.</span>
+    <div class="trivia_answer_container"></div>
+    <div class="my-2" id="lblSurveyAnswers">
+      <div class="row">
+        <div class="col-md-6 mb-2 mb-md-0">
+          <div class="trivia_answer">
+            <label></label>
+            <input class="trivia_answer_radio_button" type="radio" data-psg-required="1" data-psg-label="An answer to Question 1" name="q65012394" value="65083239"/><span class="trivia_answer_text">University of Georgia</span>
+          </div>
+        </div>
+        <div class="col-md-6 mb-2 mb-md-0">
+          <div class="trivia_answer">
+            <label></label>
+            <input class="trivia_answer_radio_button" type="radio" name="q65012394" value="65083240"/><span class="trivia_answer_text">University of Alabama</span>
+          </div>
+        </div>
+        <div class="col-md-6 mb-2 mb-md-0">
+          <div class="trivia_answer">
+            <label></label>
+            <input class="trivia_answer_radio_button" type="radio" name="q65012394" value="65083241"/><span class="trivia_answer_text">University of Tennessee</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="trivia_answer">
+            <label></label>
+            <input class="trivia_answer_radio_button" type="radio" name="q65012394" value="65083242"/><span class="trivia_answer_text">University of South Carolina</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trivia_button_container"></div>
+    <div class="row">
+      <div class="col-12">
+        <button class="trivia_submit_button btn btn-primary" id="cmdSubmit" type="submit">Submit</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12"><span class="trivia_correct_text" id="lblCorrect" style="display: none;"></span></div>
+    </div>
+    <div class="row"> 
+      <div class="col-12"><span class="trivia_wrong_text" id="lblWrong" style="display: none;"></span></div>
+    </div>
+  </div>
+  <div id="pnlPager" style="display: none;">
+    <div class="trivia_pager_container">
+      <div class="row"> 
+        <div class="col-6"><a class="trivia_pager_page_link trivia_pager_previous_page_link" id="cmdPrevious" href="#" style="display: none;">&lt; Prev</a></div>
+        <div class="col-6 text-right"><a class="trivia_pager_page_link trivia_pager_next_page_link" id="cmdNext" href="#" style="display: none;">Next &gt;</a></div>
+      </div>
+    </div>
+  </div>
+</div>

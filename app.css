@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/****************************************************************
+// Typography - Google link imported above. ^^^^^^^^
+****************************************************************/
+/****************************************************************
+// Images 
+****************************************************************/
+.pax__avatar {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.pax__avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header--default li.nav-item {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.header--default li.nav-item:hover {
+  border-bottom: 1px solid black;
+}
+
+.header--default .active {
+  border-bottom: 1px solid black !important;
+}
+
+@media (min-width: 1200px) {
+  .active {
+    border-bottom: 5px solid black !important;
+  }
+}
+
+#item-detail__full-description {
+  max-height: 325px;
+  overflow: auto;
+}
+
+@media (min-width: 1024px) {
+  #item-detail__full-description {
+    max-height: 175px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  #item-detail__full-description {
+    max-height: 125px;
+    overflow: auto;
+  }
+}
+
+.itemWrapper {
+  width: 73px;
+  height: 73px;
+  overflow: hidden;
+}
+
+.itemWrapper img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 576px) {
+  .itemWrapper {
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+  }
+  .itemWrapper img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .itemWrapper {
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+  }
+  .itemWrapper img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .itemWrapper {
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+  }
+  .itemWrapper img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .itemWrapper {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .itemWrapper img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+/* Kindle Fire HD 7" portrait and landscape */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .col-xl-8.mx-auto.shopping {
+    max-width: 100% !important;
+    -webkit-box-flex: 100% !important;
+        -ms-flex: 100% !important;
+            flex: 100% !important;
+  }
+}
+
+/* Kindle Fire HD 7" portrait */
+.trivia_title {
+  margin: 1em 0;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.trivia_answer {
+  padding: 1em;
+}
+
+.trivia_answer_radio_button {
+  margin-right: 1em;
+}
+
+body,
+html {
+  height: 100%;
+  position: relative;
+  font-family: "Roboto", Arial, sans-serif;
+  font-line-height: 1.618;
+  font-weight: 300;
+}
+
+.main--default {
+  margin-top: 5em;
+}
+
+@media (min-width: 576px) {
+  .main--default {
+    margin-top: 6em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main--default {
+    margin-top: 7em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main--default {
+    margin-top: 8em;
+  }
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,17 @@
+#item-detail__full-description {
+  max-height: 325px;
+  overflow: auto;
+}
+
+@media (min-width: 1024px) {
+  #item-detail__full-description {
+    max-height: 175px;
+    overflow: auto;
+  }
+}
+@media (min-width: 1400px) {
+  #item-detail__full-description {
+    max-height: 125px;
+    overflow: auto;
+  }
+}
