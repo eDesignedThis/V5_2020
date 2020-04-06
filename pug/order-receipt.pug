@@ -9,9 +9,14 @@ block content
         .row.mx-auto
             .col-12.col-lg-8.pl-0
                
-                p.order-total
+                p.order-total.mb-0
                     span.font-weight-bold Order Total:
                     span.ml-1 [order-total]
+                
+                a.d-block.mb-3(href="#") Print Receipt
+                 
+                    
+                    
                 p Your Order, 
                     a(href="#") DEMO152060099927
                     span , has been received on [date] and is currently being processed. You can track your order 
@@ -34,4 +39,4 @@ block content
 
 
             .col-12.col-lg-4
-                include ../pug/tokens/checkout/checkout-order-box.pug
+                include ../pug/tokens/order-receipt/order-receipt-order-box.pug

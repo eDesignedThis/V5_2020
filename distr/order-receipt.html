@@ -87,7 +87,7 @@
           <h1 class="screen-title font-weight-light mb-3">Your Order Is Confirmed!</h1>
           <div class="row mx-auto">
             <div class="col-12 col-lg-8 pl-0">
-              <p class="order-total"><span class="font-weight-bold">Order Total:</span><span class="ml-1">[order-total]</span></p>
+              <p class="order-total mb-0"><span class="font-weight-bold">Order Total:</span><span class="ml-1">[order-total]</span></p><a class="d-block mb-3" href="#">Print Receipt</a>
               <p>Your Order, <a href="#">DEMO152060099927</a><span>, has been received on [date] and is currently being processed. You can track your order </span><a href="#">here.</a></p>
               <div class="alert alert-success">
                 <p class="font-weight-bold mb-0">Next Steps... </p>
@@ -100,16 +100,15 @@
               <p class="lead">Thank you for shopping with us!</p>
             </div>
             <div class="col-12 col-lg-4">
-              <div class="checkout__order__info__box bg-light p-3">
+              <div class="order-receipt__order__box bg-light p-3">
                 <div class="row border-bottom mx-auto mb-3"> 
                   <div class="col-8 pl-0">
                     <h5 class="font-weight-light">Your Order</h5>
                   </div>
-                  <div class="col-4 pr-0 text-right"><small><a class="edit-cart-link" href="#">Edit Cart</a></small></div>
                 </div>
                 <div class="row mx-auto border-bottom mb-3">
                   <div class="col-12">
-                    <h6 class="font-weight-light"><span class="fas fa-running text-primary"></span><span class="ml-1">In Store Pick Up</span></h6><small class="d-block"> <span>You've chosen to pick up your order at the location below. </span><a href="#">Change Location</a></small>
+                    <h6 class="font-weight-light"><span class="fas fa-running text-primary"></span><span class="ml-1">In Store Pick Up</span></h6><small class="d-block"> <span>You've chosen to pick up your order at the location below. </span></small>
                     <div class="store-pickup-info my-4">
                       <p class="font-weight-bold store-location mb-0">[Store Location]</p>
                       <p class="store-address">123 Main ST. Atlanta, GA 30341<br><span class="store-phone-number">[770-123-0000]</span></p>
@@ -159,8 +158,11 @@
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Account Balance</span><span><small>(Before purchase)</small></span></span><span class="text-right">[order-subtotal]</span></li>
                   <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Order Total</span><span><small>(Points required for purchase)</small></span></span><span class="text-right">[order-subtotal]</span></li>
-                  <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Account Balance</span><span><small>(After purchase)</small></span></span><span class="text-right text-success">[points-after-purchase]]</span></li>
+                  <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Account Balance</span><span><small>(After purchase)</small></span></span><span class="text-right"><span class="d-block">[points-after-purchase]]</span><span><a href="#">Manage Account</a></span></span></li>
                 </ul>
+                <div class="row">
+                  <div class="col-12"><a class="btn btn-primary d-block" href="/distr/shopping.html">Continue Shopping</a></div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,49 @@
+.order-receipt__order__box.bg-light.p-3
+    .row.border-bottom.mx-auto.mb-3 
+        .col-8.pl-0
+            h5.font-weight-light Your Order
+
+    .row.mx-auto.border-bottom.mb-3
+        .col-12
+            h6.font-weight-light
+                span.fas.fa-running.text-primary
+                span.ml-1 In Store Pick Up
+            small.d-block 
+                span You've chosen to pick up your order at the location below. 
+            .store-pickup-info.my-4
+                p.font-weight-bold.store-location.mb-0 [Store Location]
+                p.store-address 123 Main ST. Atlanta, GA 30341
+                    br
+                    span.store-phone-number [770-123-0000]
+    .row.mx-auto.border-bottom.mb-3
+        -for (let i =0; i<2; i++)
+            include ../checkout/checkout-card.pug
+        
+
+
+
+    ul.list-group.list-group-flush
+        li.list-group-item.d-flex.justify-content-between.border-0.bg-transparent.px-0
+            span.font-weight-bold 
+                span.d-block Account Balance
+                span
+                    small (Before purchase)
+            span.text-right [order-subtotal]
+        li.list-group-item.d-flex.justify-content-between.border-0.bg-transparent.px-0
+            span.font-weight-bold 
+                span.d-block Order Total
+                span
+                    small (Points required for purchase)
+            span.text-right [order-subtotal]
+        li.list-group-item.d-flex.justify-content-between.border-0.bg-transparent.px-0
+            span.font-weight-bold 
+                span.d-block Account Balance
+                span
+                    small (After purchase)
+            span.text-right
+                span.d-block [points-after-purchase]]
+                span
+                    a(href="#") Manage Account
+    .row
+        .col-12
+            a.btn.btn-primary.d-block(href="/distr/shopping.html") Continue Shopping
