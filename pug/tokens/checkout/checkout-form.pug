@@ -1,0 +1,80 @@
+form
+    .row 
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleInputEmail1') First Name
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp')
+        .col-12.col-md-6    
+            .form-group
+                label(for='exampleInputPassword1') Last Name
+                input#exampleInputPassword1.form-control(type='text')
+    .row 
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleInputEmail1') Email
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleInputEmail1') Phone
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp')
+    .row 
+        .col-12
+            .form-group
+                label(for='exampleInputEmail1') Address
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' placeholder="Address Line 1")
+    .row 
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleInputEmail1') Address Line 2
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' placeholder="Apartment, suite, building, etc.")
+    .row 
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleInputEmail1') City 
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' )
+        .col-12.col-md-2
+            .form-group
+                label(for='exampleInputEmail1') State
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' )
+        .col-12.col-md-4
+            .form-group
+                label(for='exampleInputEmail1') Zip
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' )
+    
+    .row 
+        .col-12 
+            .form-group.form-check
+                input#exampleCheck1.form-check-input(type='checkbox')
+                label.form-check-label(for='exampleCheck1') 
+                    span Click the check box to confirm your order and agree to the 
+                    span 
+                        a(href="#") return policy.
+    .row
+        .col-12
+            .form-group.border-bottom.pb-3
+                p.mb-0 
+                    span.font-weight-bold Notice:
+                    span.ml-1 Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items.
+    .row
+        .col-12
+            .form-group.border-bottom.pb-3
+                p.h6 Purchasing Information
+                small.d-block.mb-3 The points required to purchase your items will be deducted from your account balance. 
+                p.h6 Here's how our order processing works:
+                small 
+                    ul.list-group.list-group-flush 
+                        li.list-group-item.border-0.bg-transparent.d-flex.justify-content-start
+                            span.fas.fa-check-square.text-dark.mr-1
+                            span First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar equivalent.
+                        li.list-group-item.border-0.bg-transparent.d-flex.justify-content-start
+                            span.fas.fa-check-square.text-dark.mr-1
+                            span Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.
+                        li.list-group-item.border-0.bg-transparent.d-flex.justify-content-start
+                            span.fas.fa-check-square.text-dark.mr-1
+                            span Then, we subtract the corresponding number of points from your point account. The items are shipped to you directly from the supplier.
+                
+    .row.mx-auto.justify-content-between.align-items-center
+        .col-12.col-sm-4.mb-2.order-1.order-sm-2
+            button.btn.btn-primary.btn-block(type='submit') Place Order
+        .col-12.col-sm-4.text-center.text-sm-left.order-2.order-sm-1
+            a(href="#") Cancel Order

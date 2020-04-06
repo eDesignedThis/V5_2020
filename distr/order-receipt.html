@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5f21471d45.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/app.css">
+  <title></title>
+</head>
+<body class="d-flex flex-column">
+  <header class="header--default bg-light">
+    <div class="container-fluid px-0">
+      <div class="row mx-auto align-items-center bg-dark">
+        <div class="col-4 col-sm-4 col-lg-2 col-xl-1 program__logo"><img class="img-fluid program__logo p-2" src="http://acmelogos.com/images/logo-2.svg"></div>
+        <div class="col-6 mx-auto">
+          <form class="form-inline shopping-search d-block">
+            <div class="input-group border">
+              <div class="input-group-prepend d-none d-md-block">
+                <select class="custom-select border-0">
+                  <option value="All Products">All Products</option>
+                  <option value="Apple">Apple</option>
+                </select>
+              </div>
+              <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn bg-white" type="submit"><span class="fas fa-search"></span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-2 col-sm-2 col-lg-1 col-xl-4 pl-lg-0 text-right d-xl-none ml-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fas fa-bars"></span></button>
+        </div>
+      </div>
+      <div class="row mx-auto">           
+        <div class="col-12 bg-light px-0">
+          <nav class="navbar navbar-expand-xl navbar-light d-block py-0">
+            <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Departments</a>
+                  <div class="dropdown-menu" style="width: 50vw; height: 50vh;" aria-labelledby="navbarDropdown">
+                    <div class="container-fluid">
+                      <div class="row w-100 mx-auto">
+                        <div class="col-3">
+                          <ul class="list-group list-group-flush border-0">
+                            <li class="list-group-item p-0"><a class="dropdown-item" href="/distr/events-landing.html">Events</a></li>
+                            <li class="list-group-item p-0"><a class="dropdown-item" href="#">Travel</a></li>
+                            <li class="list-group-item p-0"><a class="dropdown-item" href="#">Apple</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-9 bg-warning py-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="program-announcement--default" id="program-announcement">
+    <div class="row bg-danger text-white mx-auto py-4">
+      <div class="col-12 col-xl-8 mx-auto">
+        <div class="d-flex justify-content-between">
+          <div class="message-text">
+            <p class="font-weight-bold">Valued Program Participant:</p>
+            <p class="mb-0">Receiving your rewards in a timely manner is extremely important to us. Typically, most orders are delivered within 7-10 business days. With the spread of COVID-19, we are experiencing some limitations in the availability of certain items and delays in shipping, in some cases up to a few weeks. We will continue to communicate any adjustments to your orders as quickly as we can, and we appreciate your patience during this time.</p>
+          </div><span class="fas fa-times dismiss-program-announcement" style="cursor: pointer;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main--default flex-grow-1">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1 class="mb-0 screen-title font-weight-light"></h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-8 mx-auto shopping">
+          <h1 class="screen-title font-weight-light mb-3">Your Order Is Confirmed!</h1>
+          <div class="row mx-auto">
+            <div class="col-12 col-lg-8 pl-0">
+              <p class="order-total"><span class="font-weight-bold">Order Total:</span><span class="ml-1">[order-total]</span></p>
+              <p>Your Order, <a href="#">DEMO152060099927</a><span>, has been received on [date] and is currently being processed. You can track your order </span><a href="#">here.</a></p>
+              <div class="alert alert-success">
+                <p class="font-weight-bold mb-0">Next Steps... </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item-border-0 bg-transparent d-flex justify-content-start py-2"><span class="fas fa-arrow-circle-right"></span><span class="ml-1 mt-n1">You will receive a confirmation email after we have placed the order with the supplier.</span></li>
+                  <li class="list-group-item-border-0 bg-transparent d-flex justify-content-start"><span class="fas fa-arrow-circle-right"></span><span class="ml-1 mt-n1">You will receive another email when the supplier ships your item.</span></li>
+                </ul>
+              </div>
+              <p>We hope you enjoy your reward. If you have any questions or need to return an item, please use the form on the Contact page. Your items may be shipped by a third party. However, all questions about your order should be directed to us via the form on the Contact page. Please do not contact any third party directly as they may not have a complete record of your order.</p>
+              <p class="lead">Thank you for shopping with us!</p>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="checkout__order__info__box bg-light p-3">
+                <div class="row border-bottom mx-auto mb-3"> 
+                  <div class="col-8 pl-0">
+                    <h5 class="font-weight-light">Your Order</h5>
+                  </div>
+                  <div class="col-4 pr-0 text-right"><small><a class="edit-cart-link" href="#">Edit Cart</a></small></div>
+                </div>
+                <div class="row mx-auto border-bottom mb-3">
+                  <div class="col-12">
+                    <h6 class="font-weight-light"><span class="fas fa-running text-primary"></span><span class="ml-1">In Store Pick Up</span></h6><small class="d-block"> <span>You've chosen to pick up your order at the location below. </span><a href="#">Change Location</a></small>
+                    <div class="store-pickup-info my-4">
+                      <p class="font-weight-bold store-location mb-0">[Store Location]</p>
+                      <p class="store-address">123 Main ST. Atlanta, GA 30341<br><span class="store-phone-number">[770-123-0000]</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mx-auto border-bottom mb-3">
+                  <div class="card checkout-card mb-3 bg-transparent border-0">
+                    <div class="card-body d-flex justify-content-between p-0">
+                      <div class="row mx-auto">
+                        <div class="col-4 pl-0">
+                          <div class="card item-detail-image border-0">
+                            <div class="card-body"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg"></div>
+                          </div>
+                        </div>
+                        <div class="col-8 pr-0">
+                          <div class="row"> 
+                            <div class="col-8 px-0"><small class="item-name">[item-name]</small><small class="w-75 w-sm-25 d-block"><span class="font-weight-bold">Quantity:</span><span class="ml-1">[qty]</span></small></div>
+                            <div class="col-4 text-right">
+                              <p class="item-price">[points]<span><small class="ml-1">points</small></span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card checkout-card mb-3 bg-transparent border-0">
+                    <div class="card-body d-flex justify-content-between p-0">
+                      <div class="row mx-auto">
+                        <div class="col-4 pl-0">
+                          <div class="card item-detail-image border-0">
+                            <div class="card-body"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg"></div>
+                          </div>
+                        </div>
+                        <div class="col-8 pr-0">
+                          <div class="row"> 
+                            <div class="col-8 px-0"><small class="item-name">[item-name]</small><small class="w-75 w-sm-25 d-block"><span class="font-weight-bold">Quantity:</span><span class="ml-1">[qty]</span></small></div>
+                            <div class="col-4 text-right">
+                              <p class="item-price">[points]<span><small class="ml-1">points</small></span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Account Balance</span><span><small>(Before purchase)</small></span></span><span class="text-right">[order-subtotal]</span></li>
+                  <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Order Total</span><span><small>(Points required for purchase)</small></span></span><span class="text-right">[order-subtotal]</span></li>
+                  <li class="list-group-item d-flex justify-content-between border-0 bg-transparent px-0"><span class="font-weight-bold"> <span class="d-block">Account Balance</span><span><small>(After purchase)</small></span></span><span class="text-right text-success">[points-after-purchase]]</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer--default">
+    <div class="row justify-content-center bg-light mx-auto">
+      <div class="col-xl-6">
+        <nav>
+          <ul class="nav justify-content-center bg-info">
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row copyright py-4 text-light text-center bg-dark mx-auto">
+      <div class="col-12"><small class="text-center">Copyright &copy; 2020. Rewardtrax.com</small></div>
+    </div>
+  </footer>
+</body>
+<!-- Optional JavaScript-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/distr/js/app.js"></script>

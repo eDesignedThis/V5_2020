@@ -1,0 +1,18 @@
+extends index.pug
+
+block title
+    title
+
+block content
+    .col-xl-8.mx-auto.shopping
+        h1.screen-title.font-weight-light.mb-3 Checkout
+        .row.mx-auto
+            .col-12.col-lg-8.pl-0
+                h2.h4.font-weight-light.border-bottom.mb-3.pb-2 Contact Information
+                include ../pug/tokens/checkout/checkout-form.pug
+
+               
+
+
+            .col-12.col-lg-4
+                include ../pug/tokens/checkout/checkout-order-box.pug

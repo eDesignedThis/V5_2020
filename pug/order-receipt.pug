@@ -1,0 +1,37 @@
+extends index.pug
+
+block title
+    title
+
+block content
+    .col-xl-8.mx-auto.shopping
+        h1.screen-title.font-weight-light.mb-3 Your Order Is Confirmed!
+        .row.mx-auto
+            .col-12.col-lg-8.pl-0
+               
+                p.order-total
+                    span.font-weight-bold Order Total:
+                    span.ml-1 [order-total]
+                p Your Order, 
+                    a(href="#") DEMO152060099927
+                    span , has been received on [date] and is currently being processed. You can track your order 
+                    a(href="#") here.
+                .alert.alert-success
+                    p.font-weight-bold.mb-0 Next Steps... 
+                    ul.list-group.list-group-flush
+                        li.list-group-item-border-0.bg-transparent.d-flex.justify-content-start.py-2
+                            span.fas.fa-arrow-circle-right
+                            span.ml-1.mt-n1 You will receive a confirmation email after we have placed the order with the supplier.
+                            
+                        li.list-group-item-border-0.bg-transparent.d-flex.justify-content-start
+                            span.fas.fa-arrow-circle-right
+                            span.ml-1.mt-n1 You will receive another email when the supplier ships your item.
+                p We hope you enjoy your reward. If you have any questions or need to return an item, please use the form on the Contact page. Your items may be shipped by a third party. However, all questions about your order should be directed to us via the form on the Contact page. Please do not contact any third party directly as they may not have a complete record of your order.
+               
+                p.lead Thank you for shopping with us!
+                            
+               
+
+
+            .col-12.col-lg-4
+                include ../pug/tokens/checkout/checkout-order-box.pug

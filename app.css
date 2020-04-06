@@ -173,24 +173,6 @@ html {
 }
 
 .main--default {
-  margin-top: 5em;
-}
-
-@media (min-width: 576px) {
-  .main--default {
-    margin-top: 6em;
-  }
-}
-
-@media (min-width: 1280px) {
-  .main--default {
-    margin-top: 7em;
-  }
-}
-
-@media (min-width: 1400px) {
-  .main--default {
-    margin-top: 8em;
-  }
+  padding: 2em 0;
 }
 /*# sourceMappingURL=app.css.map */

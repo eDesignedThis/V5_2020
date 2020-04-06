@@ -1,0 +1,18 @@
+extends index.pug
+
+block title
+    title
+
+block content
+    .col-xl-8.mx-auto.shopping
+        h1.screen-title.font-weight-light.mb-3 Shopping Cart
+        .row
+            .col-12.col-md-8
+                -for (let i =0; i<3; i++)
+                    include ../pug/tokens/shopping-cart/cart-card.pug
+
+
+            .col-12.col-md-4
+                include ../pug/tokens/shopping-cart/cart__info__box.pug
+
+                    

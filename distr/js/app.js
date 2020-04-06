@@ -1,8 +1,15 @@
 console.log("app js is running");
 
-$(window).scroll(function() {
-  $(".header--default").addClass("shadow");
-});
+// Maybe this isn't necessary
+
+// $(window).scroll(function() {
+
+//   if ($(document).scrollTop() > 100) {
+//     $(".header--default").addClass("shadow fixed-top");
+//   } else {
+//     $(".header--default").removeClass("shadow fixed-top");
+//   }
+// });
 
 $.ajax({
   url: "../distr/js/main-nav.json",
@@ -23,4 +30,12 @@ $.ajax({
       }
     }
   }
+});
+
+$(".item-detail__add-to-cart").click(function() {
+  $("#exampleModal").modal("show");
+});
+
+$(".dismiss-program-announcement").click(function() {
+  $("#program-announcement").slideUp();
 });

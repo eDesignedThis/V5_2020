@@ -1,0 +1,17 @@
+.cart__order__info__box.bg-light.p-3
+    h5.font-weight-light.border-bottom Your Order
+
+    ul.list-group.list-group-flush.border-bottom.mb-3
+        li.list-group-item.d-flex.justify-content-between.border-0.bg-transparent.px-0
+            span.font-weight-bold Subtotal
+            span.text-right [order-subtotal]
+        li.list-group-item.d-flex.justify-content-between.border-0.bg-transparent.px-0
+            span.font-weight-bold Shipping
+            span.text-right.text-success FREE
+    .d-flex.justify-content-between.mb-3
+        span.font-weight-bold Order Total
+        span.text-right.font-weight-bold [order-total]
+    a.btn.btn-primary.btn-block.mb-2(href='/distr/checkout.html')
+        |   Checkout
+    small.mb-2.d-block Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. 
+    small.d-block Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.

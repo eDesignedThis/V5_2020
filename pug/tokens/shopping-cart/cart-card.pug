@@ -1,0 +1,25 @@
+.card.cart-card.mb-3
+    .card-body.d-flex.justify-content-between
+        .row 
+            .col-4
+                .card.item-detail-image.border-0
+                    .card-body
+                        img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg')
+            .col-8
+                .row 
+                    .col-8.px-0
+                        .badge.badge-success.on-sale On Sale Now! 
+                        .d-block
+                            a.item-detail-link(href="#") [item-name]
+                        small.my-2.d-block
+                            a.add-to-wishlist-link(href="#")
+                                span.far.fa-heart
+                                span.ml-1 Move to Wish List
+                        p.item-price [points]
+                            span
+                                small.ml-1 points
+                        .w-75.w-sm-25.d-block
+                            include ../item-detail/item-detail__quantity-selector.pug
+                    .col-4.text-right
+                        a.remove-from-cart-btn.d-block(href="#")
+                            span.fas.fa-times
