@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "status": "Active",
+    "promotion_name": "Pre-emptive bottom-line intranet",
+    "approved": 3,
+    "pending": 4,
+    "need_verification": 9,
+    "awarded": 1,
+    "claims_goal": "$393306.98",
+    "claims_total_sales": "$44660.63",
+    "claims": [
+      {
+        "description": "transition end-to-end e-markets",
+        "goal": "$113130.87",
+        "total_sales": "$260605.60",
+        "invoice_number": "51a9q47",
+        "product_code": "Energy",
+        "quantity": 9,
+        "amount": 65.97,
+        "payout": 45.94
+      },
+      {
+        "description": "grow dot-com supply-chains",
+        "goal": "$141189.29",
+        "total_sales": "$357844.14",
+        "invoice_number": "71zos14",
+        "product_code": "Health Care",
+        "quantity": 4,
+        "amount": 90.59,
+        "payout": 86.71
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "status": "Active",
+    "promotion_name": "Re-contextualized disintermediate intranet",
+    "approved": 7,
+    "pending": 8,
+    "need_verification": 4,
+    "awarded": 2,
+    "claims_goal": "$21263.57",
+    "claims_total_sales": "$109250.35",
+    "claims": [
+      {
+        "description": "transform next-generation e-tailers",
+        "goal": "$145922.22",
+        "total_sales": "$45176.59",
+        "invoice_number": "90j9970",
+        "product_code": "Energy",
+        "quantity": 4,
+        "amount": 77.33,
+        "payout": 52.72
+      },
+      {
+        "description": "seize sexy e-markets",
+        "goal": "$89029.62",
+        "total_sales": "$290101.37",
+        "invoice_number": "93pda58",
+        "product_code": "Energy",
+        "quantity": 3,
+        "amount": 35.82,
+        "payout": 71.05
+      },
+      {
+        "description": "envisioneer efficient mindshare",
+        "goal": "$327006.34",
+        "total_sales": "$123954.83",
+        "invoice_number": "81fl736",
+        "product_code": "Finance",
+        "quantity": 2,
+        "amount": 40.18,
+        "payout": 30.07
+      },
+      {
+        "description": "reintermediate collaborative interfaces",
+        "goal": "$263031.00",
+        "total_sales": "$416903.99",
+        "invoice_number": "22tqb90",
+        "product_code": "Public Utilities",
+        "quantity": 5,
+        "amount": 116.07,
+        "payout": 1.03
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "status": "Pending",
+    "promotion_name": "Persevering multimedia knowledge base",
+    "approved": 2,
+    "pending": 5,
+    "need_verification": 1,
+    "awarded": 2,
+    "claims_goal": "$366971.40",
+    "claims_total_sales": "$409038.58",
+    "claims": [
+      {
+        "description": "deliver user-centric communities",
+        "goal": "$272303.50",
+        "total_sales": "$253679.06",
+        "invoice_number": "65wkq88",
+        "product_code": "Miscellaneous",
+        "quantity": 10,
+        "amount": 92.56,
+        "payout": 28.92
+      },
+      {
+        "description": "harness mission-critical technologies",
+        "goal": "$70440.62",
+        "total_sales": "$230084.46",
+        "invoice_number": "60dee61",
+        "product_code": "Health Care",
+        "quantity": 6,
+        "amount": 132.83,
+        "payout": 103.3
+      },
+      {
+        "description": "implement real-time content",
+        "goal": "$190419.19",
+        "total_sales": "$438189.71",
+        "invoice_number": "41iyt60",
+        "product_code": "Basic Industries",
+        "quantity": 2,
+        "amount": 54.19,
+        "payout": 43.44
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "status": "Pending",
+    "promotion_name": "Triple-buffered global definition",
+    "approved": 8,
+    "pending": 9,
+    "need_verification": 9,
+    "awarded": 5,
+    "claims_goal": "$400353.39",
+    "claims_total_sales": "$192017.70",
+    "claims": [
+      {
+        "description": "whiteboard synergistic architectures",
+        "goal": "$177240.17",
+        "total_sales": "$295563.64",
+        "invoice_number": "12x4188",
+        "product_code": "n/a",
+        "quantity": 6,
+        "amount": 114.26,
+        "payout": 138.88
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "status": "Pending",
+    "promotion_name": "Advanced encompassing protocol",
+    "approved": 9,
+    "pending": 6,
+    "need_verification": 5,
+    "awarded": 2,
+    "claims_goal": "$172466.74",
+    "claims_total_sales": "$74765.11",
+    "claims": [
+      {
+        "description": "unleash distributed e-services",
+        "goal": "$85758.86",
+        "total_sales": "$403839.94",
+        "invoice_number": "38i0b55",
+        "product_code": "Consumer Services",
+        "quantity": 2,
+        "amount": 90.84,
+        "payout": 123.78
+      },
+      {
+        "description": "incubate open-source infomediaries",
+        "goal": "$82818.53",
+        "total_sales": "$123502.39",
+        "invoice_number": "92kcg90",
+        "product_code": "n/a",
+        "quantity": 3,
+        "amount": 90.7,
+        "payout": 116.94
+      },
+      {
+        "description": "unleash best-of-breed content",
+        "goal": "$482120.95",
+        "total_sales": "$286966.94",
+        "invoice_number": "46nq328",
+        "product_code": "Finance",
+        "quantity": 9,
+        "amount": 128.94,
+        "payout": 11.46
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "status": "Pending",
+    "promotion_name": "Inverse bi-directional encoding",
+    "approved": 2,
+    "pending": 7,
+    "need_verification": 2,
+    "awarded": 4,
+    "claims_goal": "$366971.40",
+    "claims_total_sales": "$409038.58",
+    "claims": [
+      {
+        "description": "repurpose best-of-breed technologies",
+        "goal": "$145725.56",
+        "total_sales": "$186094.26",
+        "invoice_number": "42xgx71",
+        "product_code": "Consumer Non-Durables",
+        "quantity": 2,
+        "amount": 12.43,
+        "payout": 116.32
+      },
+      {
+        "description": "implement leading-edge functionalities",
+        "goal": "$151717.52",
+        "total_sales": "$94435.14",
+        "invoice_number": "61hn776",
+        "product_code": "Energy",
+        "quantity": 6,
+        "amount": 14.79,
+        "payout": 102.63
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "status": "Pending",
+    "promotion_name": "Centralized analyzing Graphic Interface",
+    "approved": 8,
+    "pending": 4,
+    "need_verification": 3,
+    "awarded": 3,
+    "claims_goal": "$152795.44",
+    "claims_total_sales": "$302281.23",
+    "claims": [
+      {
+        "description": "enhance robust e-markets",
+        "goal": "$267775.29",
+        "total_sales": "$62148.34",
+        "invoice_number": "03ga722",
+        "product_code": "n/a",
+        "quantity": 1,
+        "amount": 24.05,
+        "payout": 146.64
+      },
+      {
+        "description": "integrate next-generation experiences",
+        "goal": "$106895.34",
+        "total_sales": "$275956.49",
+        "invoice_number": "37k0i43",
+        "product_code": "Consumer Durables",
+        "quantity": 9,
+        "amount": 135.8,
+        "payout": 17.6
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "status": "All",
+    "promotion_name": "Operative bottom-line concept",
+    "approved": 5,
+    "pending": 8,
+    "need_verification": 7,
+    "awarded": 5,
+    "claims_goal": "$21263.57",
+    "claims_total_sales": "$109250.35",
+    "claims": [
+      {
+        "description": "drive granular e-business",
+        "goal": "$206541.58",
+        "total_sales": "$75867.49",
+        "invoice_number": "03sqd17",
+        "product_code": "n/a",
+        "quantity": 10,
+        "amount": 83.11,
+        "payout": 66.54
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "status": "Active",
+    "promotion_name": "Ergonomic explicit knowledge user",
+    "approved": 7,
+    "pending": 7,
+    "need_verification": 5,
+    "awarded": 2,
+    "claims_goal": "$21263.57",
+    "claims_total_sales": "$109250.35",
+    "claims": [
+      {
+        "description": "synthesize cross-media deliverables",
+        "goal": "$295569.72",
+        "total_sales": "$88270.34",
+        "invoice_number": "18bie79",
+        "product_code": "Basic Industries",
+        "quantity": 1,
+        "amount": 80.21,
+        "payout": 75.64
+      },
+      {
+        "description": "innovate real-time schemas",
+        "goal": "$466043.44",
+        "total_sales": "$328228.52",
+        "invoice_number": "10lm849",
+        "product_code": "Technology",
+        "quantity": 7,
+        "amount": 93.29,
+        "payout": 114.85
+      },
+      {
+        "description": "exploit sexy platforms",
+        "goal": "$136254.85",
+        "total_sales": "$117869.86",
+        "invoice_number": "80ahz99",
+        "product_code": "Consumer Durables",
+        "quantity": 7,
+        "amount": 116.81,
+        "payout": 36.83
+      },
+      {
+        "description": "disintermediate impactful convergence",
+        "goal": "$89347.41",
+        "total_sales": "$134207.19",
+        "invoice_number": "27rkf72",
+        "product_code": "n/a",
+        "quantity": 7,
+        "amount": 114.65,
+        "payout": 92.93
+      },
+      {
+        "description": "productize synergistic mindshare",
+        "goal": "$4040.94",
+        "total_sales": "$423017.05",
+        "invoice_number": "03jrt78",
+        "product_code": "n/a",
+        "quantity": 8,
+        "amount": 34.71,
+        "payout": 48.63
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "status": "Suspended",
+    "promotion_name": "Front-line transitional orchestration",
+    "approved": 9,
+    "pending": 8,
+    "need_verification": 6,
+    "awarded": 3,
+    "claims_goal": "$152795.44",
+    "claims_total_sales": "$302281.23",
+    "claims": [
+      {
+        "description": "target plug-and-play functionalities",
+        "goal": "$122638.64",
+        "total_sales": "$191042.00",
+        "invoice_number": "86p5317",
+        "product_code": "Public Utilities",
+        "quantity": 8,
+        "amount": 75.32,
+        "payout": 1.17
+      },
+      {
+        "description": "brand open-source methodologies",
+        "goal": "$492527.24",
+        "total_sales": "$214162.86",
+        "invoice_number": "18m2e68",
+        "product_code": "n/a",
+        "quantity": 4,
+        "amount": 68.48,
+        "payout": 71.58
+      }
+    ]
+  }
+]

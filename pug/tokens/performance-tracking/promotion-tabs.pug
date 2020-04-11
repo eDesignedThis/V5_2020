@@ -1,0 +1,14 @@
+ul#myTab.nav.nav-tabs.d-flex.justify-content-end(role='tablist')
+    li.nav-item
+        a#active-tab.nav-link.active(data-toggle='tab' href='#active' role='tab' aria-controls='active' aria-selected='true') Active 
+    li.nav-item
+        a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Pending
+    li.nav-item
+        a#contact-tab.nav-link(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Contact
+#myTabContent.tab-content
+    #active.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='active-tab')
+        ul.list-group.list-group-flush 
+            include ../pug/tokens/performance-tracking/promotion-card.pug
+                    
+    #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab') ...
+    #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab') ...

@@ -1,0 +1,52 @@
+
+<div class="row"> 
+  <div class="col-12 enter-sale-form__instructions">
+    <div class="form-group">
+      <p class="lead enter-sale-form__title">My Claim History</p>
+    </div>
+  </div>
+</div>
+<div class="row mx-auto">
+  <div class="col-12">
+    <div class="row justify-content-between mx-auto">
+      <div class="col-12 col-md-5"><small class="font-weight-bold d-block">Description</small><small class="mb-0">${claim.description}</small></div>
+      <div class="col-12 col-md-2"><small class="font-weight-bold d-block">Goal</small><small> ${claim.claims_goal}</small></div>
+      <div class="col-12 col-md-2"><small class="font-weight-bold d-block">Total Sales</small><small>${claim.claims_total_sales}</small></div>
+      <div class="col-12 col-md-3"><small class="font-weight-bold d-block">Progress</small>
+        <div class="promo-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 border-bottom mb-3">
+    <ul class="list-group list-group-flush claim-history-grid">
+      <li class="list-group-item border-0">
+        <div class="row"> 
+          <div class="col-6 col-md-2">
+            <p class="mb">Invoice Number</p>
+            <p>${claim.claims.invoice_number}</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <p class="mb">Product Code</p>
+            <p>${claim.claims.product_code}</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <p class="mb">Claim Date</p>
+            <p>${claim.claims.claim_date}</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <p class="mb">Quantity</p>
+            <p>${claim.claims.quantity}</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <p class="mb">Amount</p>
+            <p>${claim.claims.amount}</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <p class="mb">Payout</p>
+            <p>${claim.claims.payout}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -3,7 +3,10 @@
 @import "scss/_pax-setup.scss";
 
 @import "pug/tokens/header/_header.scss";
+@import "scss/_navtabs.scss";
 @import "pug/tokens/item-detail/_item-detail.scss";
+@import "pug/tokens/my-account/_my-account.scss";
+@import "pug/tokens/performance-tracking/_performance-tracking.scss";
 @import "pug/tokens/program-announcement/_program-announcements.scss";
 @import "scss/_shopping__landing.scss";
 @import "pug/tokens/trivia/_trivia.scss";

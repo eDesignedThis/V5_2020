@@ -1,0 +1,28 @@
+.row.mx-auto 
+    mixin point-card(label, value)
+        .col-md-4.mb-4 
+            .card.text-center.shadow
+                .card-title.text-center.bg-light.px-2
+                    p.lead.mb-0.my-2
+                        span.mr-1.fa.fa-certificate
+                        span Awarded
+                .card-body
+                    p.h1 211,500
+    //- .col-md-4.mb-4 
+    //-     .card.text-center.shadow
+    //-         .card-title.text-center.bg-light
+    //-             h3.mb-0.my-2
+    //-                 span.mr-1.fa.fa-money-bill-alt
+    //-                 span Redeemed
+    //-         .card-body
+    //-             p.h1 211,500
+    //- .col-md-4 
+    //-     .card.text-center.shadow
+    //-         .card-title.text-center.bg-light
+    //-             h3.mb-0.my-2
+    //-                 span.mr-1.fa.fa-database
+    //-                 span Remaining
+    //-         .card-body
+    //-             p.h1 211,500
+    -for (let i= 0; i<3; i++)
+        +point-card("Awarded", "211,500")

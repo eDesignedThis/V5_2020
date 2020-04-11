@@ -5,7 +5,21 @@ block title
 
 block content
     .col-xl-8.mx-auto
-        .row 
-            .col-12 
+        .row.mb-3 
+            .col-12
+                p.lead.mb-0
+                    span.fas.fa-bullhorn
+                    span.ml-1 My Promotions
+        .row.mb-3
+            .col-12
+                ul#promotions-grid.list-group.list-group-flush
+                    include ../pug/tokens/performance-tracking/my-account-promotions-grid.pug
+                        
+
+        .row
+            .col-12
+                include ../pug/tokens/my-account/my-account__point-summary--default.pug
                 
+block scripts
+    script(src='../pug/tokens/performance-tracking/performance-tracking.js')
         

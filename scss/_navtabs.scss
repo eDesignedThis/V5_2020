@@ -1,0 +1,16 @@
+.nav-tabs {
+  border-bottom: 0;
+  .nav-link {
+    border: none;
+  }
+  .active {
+    border-bottom: 2px solid green !important;
+  }
+}
+
+.tab-content {
+  border-top: none;
+  .active {
+    border: none;
+  }
+}

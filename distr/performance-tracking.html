@@ -3,6 +3,9 @@
   <!-- Required meta tags-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- DevExtreme themes-->
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.common.css">
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.light.css">
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/5f21471d45.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS-->
@@ -83,7 +86,489 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-xl-8 mx-auto"></div>
+        <div class="col-xl-8 mx-auto">
+          <ul class="nav nav-tabs d-flex justify-content-end" id="myTab" role="tablist">
+            <li class="nav-item"><a class="nav-link active" id="active-tab" data-toggle="tab" href="#active" role="tab" aria-controls="active" aria-selected="true">Active </a></li>
+            <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pending</a></li>
+            <li class="nav-item"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a></li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
+              <ul class="list-group list-group-flush"> 
+                                <li class="list-group-item border-0">
+                                  <div class="card promo-card">
+                                    <div class="card-body">
+                                      <div class="row justify-content-between align-items-sm-top flex-wrap mx-auto">
+                                        <div class="col-2 col-md-1 col-text-center">
+                                          <div class="promotion__icon bg-light"><span class="fas fa-rocket"></span></div>
+                                        </div>
+                                        <div class="col-10 col-md-11 col-lg-5 mb-4 mb-lg-0"><span class="promo-info">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Promotion Title Here</p><small class="promo-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque!</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="sale-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Sale Dates</p><small class="promo-info__description">5/1/2019 - 12/31/2019</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="claim-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Claim Dates</p><small class="promo-info__description">5/1/2019 - 1/5/2021</small></span></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><a class="btn btn-primary d-block enter-sale-button">Enter Sale</a></div>
+                                        <div class="col-12 enter-sale-form bg-light mt-3 py-3">
+                                          <div class="row"> 
+                                            <div class="col-12 enter-sale-form__instructions">
+                                              <div class="form-group">
+                                                <p class="lead font-weight-bold enter-sale-form__title">Enter Sale</p>
+                                                <p class="mb-0">Please complete the fields below. Fields marked with * are required</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Company</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Phone</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Invoice Number*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Date*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Quantity</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1"> <span>Product Code (</span><span><small class="ml-1"><a class="product-lookup-btn" href="#">Product Lookup</a></small></span><span>)</span></label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Amount</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Product Extended Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                  <div class="card promo-card">
+                                    <div class="card-body">
+                                      <div class="row justify-content-between align-items-sm-top flex-wrap mx-auto">
+                                        <div class="col-2 col-md-1 col-text-center">
+                                          <div class="promotion__icon bg-light"><span class="fas fa-rocket"></span></div>
+                                        </div>
+                                        <div class="col-10 col-md-11 col-lg-5 mb-4 mb-lg-0"><span class="promo-info">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Promotion Title Here</p><small class="promo-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque!</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="sale-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Sale Dates</p><small class="promo-info__description">5/1/2019 - 12/31/2019</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="claim-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Claim Dates</p><small class="promo-info__description">5/1/2019 - 1/5/2021</small></span></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><a class="btn btn-primary d-block enter-sale-button">Enter Sale</a></div>
+                                        <div class="col-12 enter-sale-form bg-light mt-3 py-3">
+                                          <div class="row"> 
+                                            <div class="col-12 enter-sale-form__instructions">
+                                              <div class="form-group">
+                                                <p class="lead font-weight-bold enter-sale-form__title">Enter Sale</p>
+                                                <p class="mb-0">Please complete the fields below. Fields marked with * are required</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Company</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Phone</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Invoice Number*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Date*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Quantity</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1"> <span>Product Code (</span><span><small class="ml-1"><a class="product-lookup-btn" href="#">Product Lookup</a></small></span><span>)</span></label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Amount</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Product Extended Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                  <div class="card promo-card">
+                                    <div class="card-body">
+                                      <div class="row justify-content-between align-items-sm-top flex-wrap mx-auto">
+                                        <div class="col-2 col-md-1 col-text-center">
+                                          <div class="promotion__icon bg-light"><span class="fas fa-rocket"></span></div>
+                                        </div>
+                                        <div class="col-10 col-md-11 col-lg-5 mb-4 mb-lg-0"><span class="promo-info">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Promotion Title Here</p><small class="promo-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque!</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="sale-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Sale Dates</p><small class="promo-info__description">5/1/2019 - 12/31/2019</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="claim-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Claim Dates</p><small class="promo-info__description">5/1/2019 - 1/5/2021</small></span></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><a class="btn btn-primary d-block enter-sale-button">Enter Sale</a></div>
+                                        <div class="col-12 enter-sale-form bg-light mt-3 py-3">
+                                          <div class="row"> 
+                                            <div class="col-12 enter-sale-form__instructions">
+                                              <div class="form-group">
+                                                <p class="lead font-weight-bold enter-sale-form__title">Enter Sale</p>
+                                                <p class="mb-0">Please complete the fields below. Fields marked with * are required</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Company</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Phone</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Invoice Number*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Date*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Quantity</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1"> <span>Product Code (</span><span><small class="ml-1"><a class="product-lookup-btn" href="#">Product Lookup</a></small></span><span>)</span></label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Amount</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Product Extended Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                  <div class="card promo-card">
+                                    <div class="card-body">
+                                      <div class="row justify-content-between align-items-sm-top flex-wrap mx-auto">
+                                        <div class="col-2 col-md-1 col-text-center">
+                                          <div class="promotion__icon bg-light"><span class="fas fa-rocket"></span></div>
+                                        </div>
+                                        <div class="col-10 col-md-11 col-lg-5 mb-4 mb-lg-0"><span class="promo-info">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Promotion Title Here</p><small class="promo-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque!</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="sale-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Sale Dates</p><small class="promo-info__description">5/1/2019 - 12/31/2019</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="claim-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Claim Dates</p><small class="promo-info__description">5/1/2019 - 1/5/2021</small></span></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><a class="btn btn-primary d-block enter-sale-button">Enter Sale</a></div>
+                                        <div class="col-12 enter-sale-form bg-light mt-3 py-3">
+                                          <div class="row"> 
+                                            <div class="col-12 enter-sale-form__instructions">
+                                              <div class="form-group">
+                                                <p class="lead font-weight-bold enter-sale-form__title">Enter Sale</p>
+                                                <p class="mb-0">Please complete the fields below. Fields marked with * are required</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Company</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Phone</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Invoice Number*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Date*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Quantity</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1"> <span>Product Code (</span><span><small class="ml-1"><a class="product-lookup-btn" href="#">Product Lookup</a></small></span><span>)</span></label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Amount</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Product Extended Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                  <div class="card promo-card">
+                                    <div class="card-body">
+                                      <div class="row justify-content-between align-items-sm-top flex-wrap mx-auto">
+                                        <div class="col-2 col-md-1 col-text-center">
+                                          <div class="promotion__icon bg-light"><span class="fas fa-rocket"></span></div>
+                                        </div>
+                                        <div class="col-10 col-md-11 col-lg-5 mb-4 mb-lg-0"><span class="promo-info">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Promotion Title Here</p><small class="promo-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque!</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="sale-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Sale Dates</p><small class="promo-info__description">5/1/2019 - 12/31/2019</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="claim-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Claim Dates</p><small class="promo-info__description">5/1/2019 - 1/5/2021</small></span></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><a class="btn btn-primary d-block enter-sale-button">Enter Sale</a></div>
+                                        <div class="col-12 enter-sale-form bg-light mt-3 py-3">
+                                          <div class="row"> 
+                                            <div class="col-12 enter-sale-form__instructions">
+                                              <div class="form-group">
+                                                <p class="lead font-weight-bold enter-sale-form__title">Enter Sale</p>
+                                                <p class="mb-0">Please complete the fields below. Fields marked with * are required</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Company</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Phone</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Invoice Number*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Date*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Quantity</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1"> <span>Product Code (</span><span><small class="ml-1"><a class="product-lookup-btn" href="#">Product Lookup</a></small></span><span>)</span></label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Amount</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Product Extended Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                  <div class="card promo-card">
+                                    <div class="card-body">
+                                      <div class="row justify-content-between align-items-sm-top flex-wrap mx-auto">
+                                        <div class="col-2 col-md-1 col-text-center">
+                                          <div class="promotion__icon bg-light"><span class="fas fa-rocket"></span></div>
+                                        </div>
+                                        <div class="col-10 col-md-11 col-lg-5 mb-4 mb-lg-0"><span class="promo-info">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Promotion Title Here</p><small class="promo-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque!</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="sale-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Sale Dates</p><small class="promo-info__description">5/1/2019 - 12/31/2019</small></span></div>
+                                        <div class="col-6 col-sm-4 col-lg-2"><span class="claim-dates">
+                                            <p class="font-weight-bold mb-0 promo-info__title">Claim Dates</p><small class="promo-info__description">5/1/2019 - 1/5/2021</small></span></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><a class="btn btn-primary d-block enter-sale-button">Enter Sale</a></div>
+                                        <div class="col-12 enter-sale-form bg-light mt-3 py-3">
+                                          <div class="row"> 
+                                            <div class="col-12 enter-sale-form__instructions">
+                                              <div class="form-group">
+                                                <p class="lead font-weight-bold enter-sale-form__title">Enter Sale</p>
+                                                <p class="mb-0">Please complete the fields below. Fields marked with * are required</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Company</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Customer Phone</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Invoice Number*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Date*</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Quantity</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1"> <span>Product Code (</span><span><small class="ml-1"><a class="product-lookup-btn" href="#">Product Lookup</a></small></span><span>)</span></label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">Sale Amount</label>
+                                                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Product Extended Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -108,4 +593,6 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- DevEx -->
+<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.7/js/dx.all.js"></script>
 <script src="/distr/js/app.js"></script>

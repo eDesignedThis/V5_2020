@@ -1,0 +1,42 @@
+.row 
+    .col-12.enter-sale-form__instructions
+        .form-group
+            p.lead.enter-sale-form__title My Claim History
+            
+.row.mx-auto
+    .col-12
+        .row.justify-content-between.mx-auto
+            .col-12.col-md-5
+                small.font-weight-bold.d-block Description
+                small.mb-0 ${claim.description}
+            .col-12.col-md-2
+                small.font-weight-bold.d-block Goal
+                small  ${claim.claims_goal}
+            .col-12.col-md-2
+                small.font-weight-bold.d-block Total Sales
+                small ${claim.claims_total_sales}
+            .col-12.col-md-3
+                small.font-weight-bold.d-block Progress
+                .promo-progress-bar
+    .col-12.border-bottom.mb-3
+        ul.list-group.list-group-flush.claim-history-grid
+            li.list-group-item.border-0
+                .row 
+                    .col-6.col-md-2
+                        p.mb Invoice Number
+                        p ${claim.claims.invoice_number}
+                    .col-6.col-md-2
+                        p.mb Product Code
+                        p ${claim.claims.product_code}
+                    .col-6.col-md-2
+                        p.mb Claim Date
+                        p ${claim.claims.claim_date}
+                    .col-6.col-md-2
+                        p.mb Quantity
+                        p ${claim.claims.quantity}
+                    .col-6.col-md-2
+                        p.mb Amount
+                        p ${claim.claims.amount}
+                    .col-6.col-md-2
+                        p.mb Payout
+                        p ${claim.claims.payout}

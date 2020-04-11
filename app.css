@@ -36,8 +36,28 @@
 
 @media (min-width: 1200px) {
   .active {
-    border-bottom: 5px solid black !important;
+    border-bottom: 5px solid black;
   }
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs .active {
+  border-bottom: 2px solid green !important;
+}
+
+.tab-content {
+  border-top: none;
+}
+
+.tab-content .active {
+  border: none;
 }
 
 #item-detail__full-description {
@@ -57,6 +77,16 @@
     max-height: 125px;
     overflow: auto;
   }
+}
+
+.enter-sale-form {
+  display: none;
+}
+
+.promotion__icon {
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .itemWrapper {

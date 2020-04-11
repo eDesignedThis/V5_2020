@@ -32,10 +32,26 @@ $.ajax({
   }
 });
 
+// Item Details
 $(".item-detail__add-to-cart").click(function() {
   $("#exampleModal").modal("show");
 });
 
+// Program Announcements
+
 $(".dismiss-program-announcement").click(function() {
   $("#program-announcement").slideUp();
+});
+
+// Performance Tracking
+
+$(".enter-sale-button").click(function() {
+  $(this)
+    .parent()
+    .next()
+    .slideToggle();
+
+  $(".product-lookup-btn").click(function() {
+    $("#productLookup").modal("show");
+  });
 });

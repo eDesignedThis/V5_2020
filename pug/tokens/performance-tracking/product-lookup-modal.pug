@@ -1,0 +1,41 @@
+#productLookup.modal.fade(tabindex='-1' role='dialog' aria-labelledby='productLookupLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h5.font-weight-light#productLookupLabel.modal-title 
+                    span.fas.fa-check.mr-1.text-success
+                    span 1 Item Added to Cart
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                span(aria-hidden='true') &times;
+            .modal-body 
+                .row.mx-auto 
+                    .col-5 
+                        img.img-fluid(src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg')
+                    .col-7
+                        .badge.badge-success On Sale Now!
+                        h5.font-weight-light.item-title 
+                            |   [item-title] Insignia™ - Wireless Over-the-Ear Headphones - Black
+                        p.itemdetail_lblPrice 11,250 [points] points
+
+
+
+
+                
+            .modal-footer
+                .row.d-none.d-md-flex.justify-content-between.w-100
+                    .col-6
+                        p.mb-0
+                            span.font-weight-bold Items in your cart: 
+                            span.ml-1 [cart-item-count]
+                    .col-6.text-right
+                        p.mb-0
+                            span.font-weight-bold Order Subtotal: 
+                            span.ml-1 [order-total]
+
+                .row.d-flex.justify-content-between.w-100
+                    .col-12.col-md-6.mb-3.mb-md-0
+                        button.btn.btn-outline-secondary.btn-block(type='button' data-dismiss='modal')
+                            |   Continue Shopping
+                    .col-12.col-md-6
+                        a.btn.btn-primary.btn-block(type='button' href='/distr/cart.html')
+                            |   View Cart & Checkout

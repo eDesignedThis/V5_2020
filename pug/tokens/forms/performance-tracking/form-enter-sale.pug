@@ -1,0 +1,44 @@
+.col-12.enter-sale-form.bg-light.mt-3.py-3
+    .row 
+        .col-12.enter-sale-form__instructions
+            .form-group
+                p.lead.font-weight-bold.enter-sale-form__title Enter Sale
+                p.mb-0 Please complete the fields below. Fields marked with * are required
+    .row
+        .col-12.col-md-6
+                .form-group
+                    label(for='exampleInputEmail1') Customer Company
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-6
+                .form-group
+                    label(for='exampleInputEmail1') Customer Phone
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-6
+                .form-group
+                    label(for='exampleInputEmail1') Invoice Number*
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-6
+                .form-group
+                    label(for='exampleInputEmail1') Sale Date*
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-2
+                .form-group
+                    label(for='exampleInputEmail1') Quantity
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-4
+                .form-group
+                    label(for='exampleInputEmail1') 
+                        span Product Code (
+                        span
+                            small.ml-1
+                                a.product-lookup-btn(href='#') Product Lookup
+                        span )
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12.col-md-3
+                .form-group
+                    label(for='exampleInputEmail1') Sale Amount
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        .col-12
+            .form-group
+                label(for='exampleFormControlTextarea1') Product Extended Description
+                textarea#exampleFormControlTextarea1.form-control(rows='3')
