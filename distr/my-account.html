@@ -68,18 +68,7 @@
       </div>
     </div>
   </header>
-  <div class="program-announcement--default" id="program-announcement">
-    <div class="row bg-danger text-white mx-auto py-4">
-      <div class="col-12 col-xl-8 mx-auto">
-        <div class="d-flex justify-content-between">
-          <div class="message-text">
-            <p class="font-weight-bold">Valued Program Participant:</p>
-            <p class="mb-0">Receiving your rewards in a timely manner is extremely important to us. Typically, most orders are delivered within 7-10 business days. With the spread of COVID-19, we are experiencing some limitations in the availability of certain items and delays in shipping, in some cases up to a few weeks. We will continue to communicate any adjustments to your orders as quickly as we can, and we appreciate your patience during this time.</p>
-          </div><span class="fas fa-times dismiss-program-announcement" style="cursor: pointer;"></span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--include ../pug/tokens/program-announcement/program-announcement--danger.pug-->
   <main class="main--default flex-grow-1">
     <div class="container-fluid">
       <div class="row justify-content-center mb-3">
@@ -89,53 +78,89 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-xl-8 mx-auto">
-          <div class="row mb-3"> 
-            <div class="col-12">
-              <p class="lead mb-0"><span class="fas fa-bullhorn"></span><span class="ml-1">My Promotions</span></p>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-12">
-              <ul class="list-group list-group-flush" id="promotions-grid">
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="row mx-auto"> 
-                                <div class="col-md-4 mb-4"> 
-                                  <div class="card text-center shadow">
-                                    <div class="card-title text-center bg-light px-2">
-                                      <p class="lead mb-0 my-2"><span class="mr-1 fa fa-certificate"></span><span>Awarded</span></p>
-                                    </div>
-                                    <div class="card-body">
-                                      <p class="h1">211,500</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4 mb-4"> 
-                                  <div class="card text-center shadow">
-                                    <div class="card-title text-center bg-light px-2">
-                                      <p class="lead mb-0 my-2"><span class="mr-1 fa fa-certificate"></span><span>Awarded</span></p>
-                                    </div>
-                                    <div class="card-body">
-                                      <p class="h1">211,500</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4 mb-4"> 
-                                  <div class="card text-center shadow">
-                                    <div class="card-title text-center bg-light px-2">
-                                      <p class="lead mb-0 my-2"><span class="mr-1 fa fa-certificate"></span><span>Awarded</span></p>
-                                    </div>
-                                    <div class="card-body">
-                                      <p class="h1">211,500</p>
-                                    </div>
-                                  </div>
-                                </div>
+          <section id="transaction-history">
+            <div class="row mx-auto">
+              <div class="col-12">
+                <p class="lead mb-3 border-bottom pb-2"><span class="fas fa-history"></span><span class="ml-1">My Transaction History</span></p>
               </div>
             </div>
-          </div>
+            <div class="row mx-auto">
+              <div class="col-12 px-0">
+                <ul class="list-group list-group-flush px-0" id="transaction-grid">
+                  <li class="list-group-item border-0">
+                    <div class="card transaction-card transaction-card__purchase">
+                      <div class="card-body">
+                        <div class="row justify-content-between mx-auto">
+                          <div class="col-12 mb-3 col-sm-3 col-lg-2 mb-sm-0"><small class="font-weight-bold d-block">Type</small><span class="fas fa-credit-card text-muted"></span><span class="ml-2">Purchase</span></div>
+                          <div class="col-12 mb-3 col-sm-3 col-md-5 col-lg-4"><small class="font-weight-bold d-block">Order Number</small><a class="expand-info" href="#">DEMO152060099927</a></div>
+                          <div class="col-6 col-sm-2 col-md-2 col-lg-2"><small class="font-weight-bold d-block">Date</small><span class="order-date">4/11/2020</span></div>
+                          <div class="col-6 col-sm-3 col-md-2 col-lg-2"><small class="font-weight-bold d-block">Amount</small><span class="transaction-history-order-total">12,304</span><span class="ml-1"><small class="text-muted">pts</small></span></div>
+                          <div class="col-12 bg-light more-order-info py-2">
+                            <p class="mb-0"><span class="font-weight-bold">Order Details</span><span class="ml-1">{order-number}</span></p>
+                            <div class="row mx-auto mb-3 w-100">
+                              <div class="col-12 text-center">
+                                <p class="lead">Order Status</p>
+                              </div>
+                              <div class="col-10 mx-auto">
+                                <div class="row mb-4 align-items-center justify-content-between no-gutters">
+                                  <div class="col-2">
+                                    <div class="span text-center py-4 rounded-circle"><span class="order-status-icon fas fa-shopping-basket bg-secondary-light-2"></span></div>
+                                  </div>
+                                  <div class="col-2">
+                                    <div class="border"></div>
+                                  </div>
+                                  <div class="col-2">
+                                    <div class="span text-center py-4 rounded-circle"><span class="order-status-icon fas fa-truck-loading bg-secondary-light-2"></span></div>
+                                  </div>
+                                  <div class="col-2">
+                                    <div class="border"></div>
+                                  </div>
+                                  <div class="col-2">                              
+                                    <div class="span text-center py-4 rounded-circle"><span class="order-status-icon fas fa-home bg-success text-white"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12"> 
+                                <div class="row"> 
+                                  <div class="col-2">
+                                    <div class="card item-detail-image border-0">
+                                      <div class="card-body"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5759/5759922cv11d.jpg"></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 border-right">
+                                    <div class="row"> 
+                                      <div class="col-8 px-0">
+                                        <div class="d-block">
+                                          <p class="order-tracking__item-name font-weight-bold">[item-name]</p>
+                                        </div>
+                                        <p class="item-price">[points]<span><small class="ml-1">points</small></span></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <p class="font-weight-bold">Delivery Method</p>
+                                      </div>
+                                      <div class="col-8">
+                                        <p>Shipped to Address</p>
+                                        <p class="mb-0">Demo User</p>
+                                        <p class="mb-0">123 Main St. Atlanta, GA 30341</p><small class="font-weight-bold">Delivered on 4/11/2020</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -165,4 +190,4 @@
 <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.7/js/dx.all.js"></script>
 <script type="text/javascript" src="/distr/js/pagination.min.js"></script>
 <script src="/distr/js/app.js"></script>
-<script src="../pug/tokens/performance-tracking/performance-tracking.js"></script>
+<script src="../pug/tokens/my-account/my-account.js"></script>

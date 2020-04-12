@@ -3,6 +3,41 @@
 // Typography - Google link imported above. ^^^^^^^^
 ****************************************************************/
 /****************************************************************
+// Colors
+****************************************************************/
+.bg-primary {
+  background: #007bff;
+}
+
+.bg-primary-light-1 {
+  background: #409cff;
+}
+
+.bg-primary-light-2 {
+  background: #80bdff;
+}
+
+.bg-primary-light-3 {
+  background: white;
+}
+
+.bg-secondary {
+  background: #6c757d;
+}
+
+.bg-secondary-light-1 {
+  background: #8d959c;
+}
+
+.bg-secondary-light-2 {
+  background: #afb5ba;
+}
+
+.bg-secondary-light-3 {
+  background: #f3f4f5;
+}
+
+/****************************************************************
 // Images 
 ****************************************************************/
 .pax__avatar {
@@ -38,6 +73,13 @@
   .active {
     border-bottom: 5px solid black;
   }
+}
+
+.transaction-card .order-status-icon {
+  font-size: 1.5rem;
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
 }
 
 .nav-tabs {
@@ -77,6 +119,18 @@
     max-height: 125px;
     overflow: auto;
   }
+}
+
+.transaction-card {
+  border-left-width: 3px;
+}
+
+.transaction-card__award {
+  border-left-color: green;
+}
+
+.transaction-card__purchase {
+  border-left-color: red;
 }
 
 .enter-sale-form {

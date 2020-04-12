@@ -1,0 +1,66 @@
+li.list-group-item.border-0
+    .card.transaction-card.transaction-card__purchase
+        .card-body
+            .row.justify-content-between.mx-auto
+                .col-12.mb-3.col-sm-3.col-lg-2.mb-sm-0
+                    small.font-weight-bold.d-block Type
+                    span.fas.fa-credit-card.text-muted
+                    span.ml-2 Purchase
+                .col-12.mb-3.col-sm-3.col-md-5.col-lg-4
+                    small.font-weight-bold.d-block Order Number
+                    a.expand-info(href="#") DEMO152060099927
+                .col-6.col-sm-2.col-md-2.col-lg-2
+                    small.font-weight-bold.d-block Date
+                    span.order-date 4/11/2020
+                .col-6.col-sm-3.col-md-2.col-lg-2
+                    small.font-weight-bold.d-block Amount
+                    span.transaction-history-order-total 12,304
+                    span.ml-1
+                        small.text-muted pts
+                .col-12.bg-light.more-order-info.py-2
+                    p.mb-0
+                        span.font-weight-bold Order Details
+                        span.ml-1 {order-number}
+                    .row.mx-auto.mb-3.w-100
+                        .col-12.text-center
+                            p.lead Order Status
+                        .col-10.mx-auto
+                            .row.mb-4.align-items-center.justify-content-between.no-gutters
+                                .col-2
+                                    .span.text-center.py-4.rounded-circle
+                                        span.order-status-icon.fas.fa-shopping-basket.bg-secondary-light-2
+                                .col-2
+                                    .border
+                                .col-2
+                                    .span.text-center.py-4.rounded-circle
+                                        span.order-status-icon.fas.fa-truck-loading.bg-secondary-light-2
+                                .col-2
+                                    .border
+
+                                .col-2                               
+                                    .span.text-center.py-4.rounded-circle
+                                        span.order-status-icon.fas.fa-home.bg-success.text-white
+                        .col-12 
+                            include ../my-account/order-tracking-card.pug
+//- li.list-group-item.border-0
+//-     .card.transaction-card.transaction-card__award
+//-         .card-body
+//-             .row.justify-content-between.mx-auto
+//-                 .col-12.mb-3.col-sm-3.col-lg-2.mb-sm-0
+//-                     small.font-weight-bold.d-block Type
+//-                     span.fas.fa-award.text-muted
+//-                     span.ml-2 Award
+//-                 .col-12.mb-3.col-sm-3.col-md-5.col-lg-4
+//-                     small.font-weight-bold.d-block Description
+//-                     span.award-description Happy Holidays!
+//-                 .col-6.col-sm-2.col-md-2.col-lg-2
+//-                     small.font-weight-bold.d-block Date
+//-                     span.order-date 4/11/2020
+//-                 .col-6.col-sm-3.col-md-2.col-lg-2
+//-                     small.font-weight-bold.d-block Amount
+//-                     span.transaction-history-order-total 12,304
+//-                     span.ml-1
+//-                         small.text-muted pts
+//-                 .col-12.bg-light.more-order-info.py-2
+//-                     p.mb-0 More content here.
+

@@ -8,6 +8,43 @@ $base-line-height: 1.618 !default;
 $base-font-weight: 300 !default;
 
 /****************************************************************
+// Colors
+****************************************************************/
+$primary: #007bff;
+$secondary: #6c757d;
+
+//System
+$success: #28a745 !important;
+$danger: #dc3545 !important;
+$warning: #ffc107 !important;
+$info: #17a2b8 !important;
+$light: #f8f9fa !important;
+$dark: #343a40 !important;
+$white: #fff !important;
+$transparent: transparent !important;
+
+// Generate color utilities for user
+$palette: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+@each $color, $value in $palette {
+  .bg-#{$color} {
+    background: $value;
+  }
+  .bg-#{$color}-light-1 {
+    background: lighten($value, 12.5%);
+  }
+  .bg-#{$color}-light-2 {
+    background: lighten($value, 25%);
+  }
+  .bg-#{$color}-light-3 {
+    background: lighten($value, 50%);
+  }
+}
+
+/****************************************************************
 // Images 
 ****************************************************************/
 $avatar-size: 45px !default;

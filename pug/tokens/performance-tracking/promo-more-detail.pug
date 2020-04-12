@@ -18,25 +18,25 @@
             .col-12.col-md-3
                 small.font-weight-bold.d-block Progress
                 .promo-progress-bar
-    .col-12.border-bottom.mb-3
+    .col-12.mb-3
         ul.list-group.list-group-flush.claim-history-grid
             li.list-group-item.border-0
                 .row 
                     .col-6.col-md-2
-                        p.mb Invoice Number
+                        small.d-block.font-weight-bold Invoice Number
                         p ${claim.claims.invoice_number}
                     .col-6.col-md-2
-                        p.mb Product Code
+                        small.d-block.font-weight-bold Product Code
                         p ${claim.claims.product_code}
                     .col-6.col-md-2
-                        p.mb Claim Date
+                        small.d-block.font-weight-bold Claim Date
                         p ${claim.claims.claim_date}
                     .col-6.col-md-2
-                        p.mb Quantity
+                        small.d-block.font-weight-bold Quantity
                         p ${claim.claims.quantity}
                     .col-6.col-md-2
-                        p.mb Amount
+                        small.d-block.font-weight-bold Amount
                         p ${claim.claims.amount}
                     .col-6.col-md-2
-                        p.mb Payout
+                        small.d-block.font-weight-bold Payout
                         p ${claim.claims.payout}

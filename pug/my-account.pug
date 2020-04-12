@@ -5,21 +5,41 @@ block title
 
 block content
     .col-xl-8.mx-auto
-        .row.mb-3 
-            .col-12
-                p.lead.mb-0
-                    span.fas.fa-bullhorn
-                    span.ml-1 My Promotions
-        .row.mb-3
-            .col-12
-                ul#promotions-grid.list-group.list-group-flush
-                    include ../pug/tokens/performance-tracking/my-account-promotions-grid.pug
+        //- section#my-points.mb-3
+        //-     .row.mx-auto.mb-2
+        //-         .col-12
+        //-             p.lead.mb-3.border-bottom.pb-2
+        //-                 span.fas.fa-piggy-bank
+        //-                 span.ml-1 My Points
+        //-     .row
+        //-         .col-12
+        //-             include ../pug/tokens/my-account/my-account__point-summary--default.pug
+
+        //- section#promotions.mb-3
+        //-     .row.mx-auto
+        //-         .col-12
+        //-             p.lead.mb-3.border-bottom.pb-2
+        //-                 span.fas.fa-bullhorn
+        //-                 span.ml-1 My Promotions
+        //-     .row
+        //-         .col-12
+        //-             ul#promotions-grid.list-group.list-group-flush
+        //-                 include ../pug/tokens/performance-tracking/my-account-promotions-grid.pug
                         
 
-        .row
-            .col-12
-                include ../pug/tokens/my-account/my-account__point-summary--default.pug
+        
+
+        section#transaction-history
+            .row.mx-auto
+                .col-12
+                    p.lead.mb-3.border-bottom.pb-2
+                        span.fas.fa-history
+                        span.ml-1 My Transaction History
+            .row.mx-auto
+                .col-12.px-0
+                    ul#transaction-grid.list-group.list-group-flush.px-0
+                        include ../pug/tokens/my-account/transaction-history.pug
                 
 block scripts
-    script(src='../pug/tokens/performance-tracking/performance-tracking.js')
+    script(src='../pug/tokens/my-account/my-account.js')
         

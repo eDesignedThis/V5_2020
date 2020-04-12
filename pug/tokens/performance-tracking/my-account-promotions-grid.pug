@@ -35,8 +35,9 @@ mixin performance-tracking-promo
                             .promos__awarded 
                                 a.promo__more-details-link(href="#") Details
                     .col-12.bg-light.promo__more-details.py-3               
-                        //- include ../performance-tracking/promo-more-detail.pug
+                        include ../performance-tracking/promo-more-detail.pug
 
 
-//- +performance-tracking-promo
+-for (i=0; i<3; i++)
+    +performance-tracking-promo
 
